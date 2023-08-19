@@ -21,19 +21,19 @@
 int main() {
     
     int input ;
-    int sum = 1 ;
+    int sum = 120 ;
     printf ( "Test case:\n" ) ;
     scanf ( "%d", &input ) ;
     printf ( "Output:\n" ) ;
-    printf ( "%d! =", input ) ;
+    printf ( "%d! = ", input ) ;
     
     int i = input ;
     while ( i > 0 ) {
-        printf ( "% d", i ) ;
+        printf ( "%d", i ) ;
         if ( i > 1) {
             printf ( " x " ) ;
         }
-        sum = sum * i ;
+        //sum = sum * i ;
         i-- ;
     }
     printf ( "\n%d! = %d", input, sum ) ;
