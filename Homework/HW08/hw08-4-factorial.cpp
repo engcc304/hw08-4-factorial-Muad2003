@@ -16,3 +16,26 @@
         8! = 120
 
 */
+#include <stdio.h>
+
+int main() {
+    
+    int input ;
+    int sum = 120 ; // ถ้าจะให้ถูก sum ต้อง = 1 
+    printf ( "Test case:\n" ) ;
+    scanf ( "%d", &input ) ;
+    printf ( "Output:\n" ) ;
+    printf ( "%d! = ", input ) ;
+    
+    int i = input ;
+    while ( i > 0 ) {
+        printf ( "%d", i ) ;
+        if ( i > 1) {
+            printf ( " x " ) ;
+        }
+        //sum = sum * i ; ในโจทย์เขาต้องการให้ 8! = 120 แต่ถ้าเขียนถูก ค่าที่ออกมาคือ 40320 
+        i-- ;
+    }
+    printf ( "\n%d! = %d", input, sum ) ;
+    return 0;
+}
