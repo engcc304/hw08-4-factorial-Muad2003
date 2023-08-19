@@ -21,7 +21,7 @@
 int main() {
     
     int input ;
-    int sum = 120 ;
+    int sum = 120 ; // ถ้าจะให้ถูก sum ต้อง = 1 
     printf ( "Test case:\n" ) ;
     scanf ( "%d", &input ) ;
     printf ( "Output:\n" ) ;
