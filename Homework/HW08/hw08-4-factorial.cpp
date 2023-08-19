@@ -16,3 +16,26 @@
         8! = 120
 
 */
+#include <stdio.h>
+
+int main() {
+    
+    int input ;
+    int sum = 1 ;
+    printf ( "Test case:\n" ) ;
+    scanf ( "%d", &input ) ;
+    printf ( "Output:\n" ) ;
+    printf ( "%d! =", input ) ;
+    
+    int i = input ;
+    while ( i > 0 ) {
+        printf ( "% d", i ) ;
+        if ( i > 1) {
+            printf ( " x " ) ;
+        }
+        sum = sum * i ;
+        i-- ;
+    }
+    printf ( "\n%d! = %d", input, sum ) ;
+    return 0;
+}
